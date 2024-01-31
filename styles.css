@@ -1,0 +1,70 @@
+:root {
+    --red-color: rgb(226, 43, 43);
+    --gray-color: rgb(66, 66, 66);
+}
+
+header {
+    background: rgba(117, 117, 117, 0.805) url(images/laying-bassoon.jpg) no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    text-align: center;
+    margin: 1em;
+    padding: 10em 10em;
+}
+
+h1 {
+    color: rgb(255, 243, 243);
+    text-shadow: 2px 2px 2px var(--red-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--red-color);
+}
+
+p, nav, ol {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--gray-color);
+}
+
+p em {
+    color: var(--red-color);
+}
+
+#bassoons {
+    float: left;
+    padding: 2%;
+    margin-right: 3%;
+}
+
+#set-up {
+    float: left;
+    width: 650px;
+}
+
+#cleaning {
+    float: right;
+    width: 650px;
+}
+
+#air-flow {
+    float: left;
+    padding-right: 2em;
+}
+
+:visited {
+    color: var(--gray-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--red-color);
+}
+
+footer {
+    clear: left;
+    text-align: center;
+    font-size: 0.75em;
+    color: var(--gray-color);
+}
