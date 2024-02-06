@@ -4,12 +4,12 @@
 }
 
 header {
-    background: rgba(117, 117, 117, 0.805) url(images/laying-bassoon.jpg) no-repeat;
+    background: rgba(117, 117, 117, 0.805) url(images/bassooncloseup.jpg) no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
-    text-align: center;
-    margin: 1em;
-    padding: 10em 10em;
+    text-align: left;
+    font-size: larger;
+    padding: 15em 10em;
 }
 
 h1 {
@@ -18,12 +18,17 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h2, h3 {
+h2, h3, h4 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--red-color);
 }
 
-p, nav, ol {
+b {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--red-color);
+}
+
+p, nav, ul, ol {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--gray-color);
 }
@@ -53,6 +58,10 @@ p em {
     padding-right: 2em;
 }
 
+.reed-anatomy {
+    border: 2px solid #000000;
+}
+
 :visited {
     color: var(--gray-color);
     text-decoration: none;
@@ -62,7 +71,7 @@ a:hover {
     color: var(--red-color);
 }
 
-footer {
+footer, #crookandstaple {
     clear: left;
     text-align: center;
     font-size: 0.75em;
