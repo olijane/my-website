@@ -1,68 +1,102 @@
+/* Variables */
 :root {
     --red-color: rgb(226, 43, 43);
     --gray-color: rgb(66, 66, 66);
+    --white-color: rgb(255, 243, 243);
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section,
+footer {
+    padding: 0 8px;
+}
+
+/* Header and header image */
 header {
-    background: rgba(117, 117, 117, 0.805) url(images/bassooncloseup.jpg) no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    text-align: left;
+    background: rgba(117, 117, 117, 0.805) url(images/bassooncloseup.jpg) no-repeat center;
     font-size: larger;
-    padding: 15em 10em;
+    display: block;
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 13em 5em;
+    margin-top: -3em;
 }
 
-h1 {
-    color: rgb(255, 243, 243);
-    text-shadow: 2px 2px 2px var(--red-color);
+.header {
+    color: var(--white-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--red-color);
 }
 
 b {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--red-color);
 }
 
-p, nav, ul, ol {
+p,
+ul,
+ol {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--gray-color);
 }
 
-p em {
-    color: var(--red-color);
+/* History Page layout */
+div#german-french {
+    display: flex;
+    flex-direction: row;
 }
 
-#bassoons {
-    float: left;
-    padding: 2%;
-    margin-right: 3%;
+div#german-french p {
+    margin: 1em;
 }
 
-#set-up {
-    float: left;
-    width: 650px;
+/* Images */
+main#basics img {
+    min-width: 150px;
 }
 
-#cleaning {
-    float: right;
-    width: 650px;
+section#set-up img {
+    width: 33%;
 }
 
 #air-flow {
     float: left;
     padding-right: 2em;
+    min-width: 100px;
+    width: 15%;
 }
 
-.reed-anatomy {
-    border: 2px solid #000000;
+section#reed-modifying img {
+    min-width: 150px;
+    width: 33%;
 }
 
-:visited {
+#cane-prep-image {
+    min-width: 100px;
+    width: 100%;
+}
+
+/* Jump Links */
+.jump-links {
+    text-align: center;
+}
+
+/* Links */
+a:link {
+    color: var(--gray-color);
+}
+
+a:visited {
     color: var(--gray-color);
     text-decoration: none;
 }
@@ -71,9 +105,78 @@ a:hover {
     color: var(--red-color);
 }
 
-footer, #crookandstaple {
+/* Footer */
+footer,
+#crookandstaple {
     clear: left;
     text-align: center;
     font-size: 0.75em;
     color: var(--gray-color);
+}
+
+/* Nav Bar */
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 0;
+    text-align: center;
+    background: transparent;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav ul li {
+    color: var(--white-color);
+    flex-basis: 25%;
+    padding: 0 1.5em;
+}
+
+nav ul li a {
+    color: var(--white-color) !important;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+nav ul li a:hover {
+    text-shadow: black;
+}
+
+/* Media Queries */
+@media (width <=456px) {
+    header {
+        width: auto;
+        background-size: cover;
+        font-size: larger;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: var(--red-color);
+        font-size: large;
+    }
+}
+
+@media (width <=730px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    header {
+        margin-top: -6em;
+    }
+    
+    .header {
+        text-align: center;
+    }
+}
+
+@media (width <=830px) {
+    div#german-french {
+        flex-direction: column;
+    }
 }
