@@ -22,7 +22,7 @@ header {
     display: block;
     background-size: cover;
     background-blend-mode: darken;
-    padding: 13em 5em;
+    padding: 10em 5em;
     margin-top: -3em;
 }
 
@@ -50,10 +50,85 @@ ol {
     color: var(--gray-color);
 }
 
-/* History Page layout */
-div#german-french {
+/* Home Page Layouts */
+#scales {
     display: flex;
     flex-direction: row;
+}
+
+#scales-text {
+    padding: 1em;
+}
+
+/* Basics Page Layout */
+#set-up-and-holding {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1;
+    grid-template-areas: 
+    "list image";
+}
+
+#set-up-list {
+    grid-area: list;
+    justify-content: center;
+}
+
+#sitting-img {
+    grid-area: image;
+    padding: 1em 3em;
+    padding-left: 5em;
+}
+
+.wrap {
+    float: left;
+    padding: 0.5em 1em;
+    padding-top: 0;
+    max-width: 300px;
+    width: 33%;
+}
+
+#crutch-img {
+    float: right;
+    padding: 0.5em 1em;
+    padding-top: 0;
+    min-width: 75px;
+    max-width: 150px;
+    width: 15%;
+}
+
+section#cleaning {
+    clear: both;
+}
+
+/* History Page Layout */
+div#german-french {
+    display: grid;
+    grid-template-columns: 0.75fr 2fr;
+    grid-template-rows: 2;
+    grid-template-areas: 
+    "img german"
+    "img french";
+}
+
+#german {
+    grid-area: german;
+    padding-left: 1em;
+    padding-right: 2em;
+}
+
+#french {
+    grid-area: french;
+    padding-left: 1em;
+    padding-right: 2em;
+}
+
+#german-french-img {
+    grid-area: img;
+    padding: 1em 0;
+    min-width: 350px;
+    max-width: 450px;
+    width: 100%;
 }
 
 div#german-french p {
@@ -61,6 +136,18 @@ div#german-french p {
 }
 
 /* Images */
+#fingering-chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#scales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .phone-pics {
     min-width: 350px;
     max-width: 450px;
@@ -78,22 +165,34 @@ section#set-up img {
 }
 
 #air-flow {
-    float: left;
-    padding-right: 2em;
-    min-width: 100px;
-    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    max-width: 300px;
+    width: 33%;
+}
+
+#reed-anatomy-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 section#reed-modifying img {
     min-width: 150px;
     max-width: 250px;
-    width: 33%;
+    width: 100%;
+    padding: 0 0.5em;
 }
 
 #cane-prep-image {
     min-width: 100px;
     max-width: 500px;
     width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Jump Links */
@@ -139,7 +238,6 @@ nav ul {
 }
 
 nav ul li {
-    color: var(--white-color);
     flex-basis: 25%;
     padding: 0 1.5em;
 }
@@ -151,38 +249,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-shadow: black;
-}
-
-/* Grid Layout Page */
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "hdr hdr hdr"
-    "left main right"
-    "ftr ftr ftr";
-}
-
-.grid-header {
-    grid-area: hdr;
-}
-
-.sidebar-left {
-    grid-area: left;
-}
-
-.sidebar-right {
-    grid-area: right;
-}
-
-.main-content {
-    grid-area: main;
-}
-
-.grid-footer {
-    grid-area: ftr;
+    color: rgb(255, 172, 172) !important;
 }
 
 /* Media Queries */
@@ -214,14 +281,56 @@ nav ul li a:hover {
     .header {
         text-align: center;
     }
-}
 
-@media (width <=830px) {
-    div#german-french {
+    #scales {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
-    div#german-french p {
-        margin: 0;
+    #fingering-chart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }    
+
+    .phone-pics {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (width <=850px) {
+    #set-up-and-holding {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        grid-template-areas: 
+        "list"
+        "image";
+    }
+    
+    #sitting-img {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (width <=1075px) {
+    div#german-french {
+        grid-template-columns: 2;
+        grid-template-rows: 3;
+        grid-template-areas: 
+        "german german"
+        "french french"
+        "img img";
+    }
+
+    #german-french-img {
+        min-width: 100px;
+        max-width: 400px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

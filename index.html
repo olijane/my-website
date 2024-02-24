@@ -11,16 +11,15 @@
 </head>
 
 <body>
-    <!--Fix the hover effect on nav-->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="basics.html">Set Up and Care</a></li>
             <li><a href="reeds.html">Reeds</a></li>
             <li><a href="history.html">History</a></li>
-            <li><a href="grid.html">Grid</a></li>
         </ul>
     </nav>
+    <!--Maybe put a jump link list so users can see what is the page?-->
     <main id="home">
         <header>
             <h1 class="header"><b class="header">The Bassoon</b></h1>
@@ -40,6 +39,7 @@
         </section>
         <section>
         </section>
+        <!--General stuff about notes on the bassoon-->
         <section>
             <h2>Bassoon Notes</h2>
             <p>
@@ -56,33 +56,45 @@
                 is matters less if it is only heard as part of a sixteenth-note run). Some of the fingerings will be
                 learned as you need them. The front F&sharp; fingering, for example, is used when another fingering that
                 requires the right hand thumb is used immediately before or after an F&sharp; to avoid bubbles.</p>
-            <img class="phone-pics" src="images/fingering-chart-one.jpg" alt="fingering chart for lower half of range">
-            <img class="phone-pics" src="images/fingering-chart-two.jpg" alt="fingering chart for upper half of range">
+            <!--Flexbox used for fingering chart images to center them-->
+                <div id="fingering-chart">
+                <img class="phone-pics" src="images/fingering-chart-one.jpg"
+                    alt="fingering chart for lower half of range">
+                <img class="phone-pics" src="images/fingering-chart-two.jpg"
+                    alt="fingering chart for upper half of range">
+            </div>
             <h3>Half Holes and Quarter Holes</h3>
             <p>The notes F&sharp;, A&flat;, A, and high G&flat; through high C require either a half hole or quarter
                 hole.</p>
             <p>This means that you have to shift your left hand pointer finger to only cover the first tone hole
                 half-way or a quarter of the way. How much you cover the hole depends on your bassoon.</p>
             <h2>Scales</h2>
-            <img class="phone-pics" src="images/scales.jpg" alt="major and minor scales in bass clef">
-            <p>There are three types of minor scales: natural, harmonic, and melodic. Natural minor scales are played as
-                written on the sheet. Harmonic minor scales raise the 7th by a half-step going up and down the scale.
-                Melodic minor scales raise the 6th and 7th by a half-step only going up; they are lowered again to be as
-                written going down.
-            </p>
-            <p>For more about scales and other music theory, go <a
-                    href="https://musictheory.pugetsound.edu/mt21c/MinorScales.html" target="_blank">here</a>.</p>
+            <!--Grid used to put text to side of image-->
+            <div id="scales">
+                <img class="phone-pics" src="images/scales.jpg" alt="major and minor scales in bass clef">
+                <div id="scales-text">
+                    <p>There are three types of minor scales: natural, harmonic, and melodic. Natural minor scales are
+                        played as written on the sheet. Harmonic minor scales raise the 7th by a half-step going up and
+                        down the scale. Melodic minor scales raise the 6th and 7th by a half-step only going up; they are lowered
+                        again to be as written going down.
+                    </p>
+                    <p>For more about scales and other music theory, go <a
+                            href="https://musictheory.pugetsound.edu/mt21c/MinorScales.html" target="_blank">here</a>.
+                    </p>
+                </div>
+            </div>
         </section>
+        <!--FLICKING and VENTING-->
         <section>
             <h2>Flicking and Venting</h2>
             <p>
                 Flicking involves the left hand thumb momentarily pressing or "flicking" the high A through D keys at
                 the beginning of the same notes an octave lower to avoid the notes cracking (brief multiphonics) when
                 you slur between octaves. For example, if you are playing middle A and you have to slur to the high A an
-                octave above, you can
-                briefly flick the A key as you slur up. Venting is similar, where instead of flicking the key, the
-                flicking key is held for the duration of the
-                note. Venting effects the pitch and intonation of the note, but it usually allows the note to "speak"
+                octave above, you can briefly flick the A key as you slur up. Venting is similar, where instead of
+                flicking the key, the
+                flicking key is held for the duration of the note. Venting effects the pitch and intonation of the note,
+                but it usually allows the note to "speak"
                 more.
             </p>
             <p>
@@ -95,6 +107,7 @@
                 whisper key, try to keep the pitch down using the "Ah" vowel and thinking the lower pitch.
             </p>
         </section>
+        <!--PITCH/BREATH CONTROL and EMBOUCHURE-->
         <section>
             <h2>Pitch Control</h2>
             <p>Players have a lot of flexibility with their pitch and it is important that the player learn how to
@@ -129,7 +142,8 @@
                 to help with breath control.</p>
             <p>Pitch control is vital for producing a good tone on any instrument.</p>
         </section>
-        <!--Finish adding all the content below-->
+        <!--Finish adding all the content to Vibrato section-->
+        <!--ARTICULATION & TONGUING-->
         <section>
             <h2>Articulation</h2>
             <p>Articulation describes how muscicians start and end a note. For wind instruments, we use our tongue.
@@ -143,6 +157,7 @@
             <p>Starts of notes can vary greatly: double reed players, especially, are very good at staccato, punchy
                 notes. However, we can also produce a beautiful legato, or a breath attack.</p>
         </section>
+        <!--VIBRATO-->
         <section>
             <h2>Vibrato</h2>
             <p>Vibrato is a technique muscicians use during longer notes to make them more interesting and expressive.
@@ -151,6 +166,7 @@
             <p>For bassoon, the vibrato should be from the throat. You can also vibrato from lower (like your core), but
                 throat vibrato is my preferred method.</p>
         </section>
+        <!--ADVANCED/EXTRA TECHNIQUES: Multiphonics, Circular Breathing, Other tonguing techniques-->
         <section>
             <h2>Other Techniques</h2>
             <h3>Multiphonics</h3>
@@ -162,22 +178,56 @@
             <p>For the bassoon, multiphonics can be produced with new fingerings, but are generally heavily influenced
                 by embouchure position. Look up different techniques and experiment on your own instrument to see what
                 works best for you.</p>
-            <h3>Double-Tonguing</h3>
-            <p>Double-tonguing is used when the music has many rapid notes in quick succession too fast for regular
-                articulation. To do it, use "tee-kee" instead of "tee". Bassoonists also use "taco", so you can
-                experiment and see what you like. This is for a pizzicato sequence that requires staccato articulation,
-                but if you begin with "da" the second syllable is "ga".</p>
-            <h3>Flutter-Tonguing</h3>
-            <p>Two methods: alveolar trill and uvular trill. Alveolar trills are usually
-                done by "gargling" in the back of the throat or the conventional method of rolling Rs/rolling the
-                tip of the tongue to create a "FrrrFrrr" sound. Uvular trills are done by producing a flutter tongue
-                effect in the back of the tongue, which usually makes a slightly rougher "frrr" effect. It can also
-                be used if the player cannot roll their tongue. The effect depends on instrument and volume.</p>
-            <p><b>Alveolar Trill</b></p>
+            <h3>Circular Breathing</h3>
+            <p>A technique that wind players use to produce a continuous tone without interruption. To accomplish this,
+                the muscician breathes <i>in</i> through the nose while simultaneously blow air <i>out</i> through the
+                mouth using air stored in the cheeks.</p>
+            <p>Learning: </p>
+            <ol>
+                <li>Hold a finger in front of a thin air stream from the mouth and listen to the wind sound.</li>
+                <li>Learn to switch between cheek air and lung air without a jolt in air pressure. You can practice by
+                    blowing air through a straw onto/into a cup of water (near surface level) and continuously switch
+                    between cheek air and lung air, trying to avoid changes to the bubbling/depression on the surface of
+                    the water.</li>
+            </ol>
+            <p>Performing: </p>
+            <ol>
+                <li>Fully inhale and begin to exhale and blow out.</li>
+                <li>When your lungs are nearly empty, blow the last volume of air into your mouth and inflate your
+                    cheeks with part of this air.</li>
+                <li>While still blowing this last bit of air out by squeezing the cheeks, quickly fill your lungs by
+                    inhaling through your nose before you run out of air in your mouth.</li>
+                <li>If done correctly, by the time the air in the mouth is nearly exhausted you can begin to exhale from
+                    the lungs again.</li>
+                <li>Repeat</li>
+            </ol>
+            <h3>Double-Tonguing, Triple-Tonguing, Cross-beat Tonguing, [&] Flutter-Tonguing</h3>
+            <p><b>Double-Tonguing:</b> </p>
+            <ul>
+                <li>Used when the music has many rapid notes in quick succession too fast for regular
+                    articulation</li>
+                <li>Use "tee-kee" instead of "tee-tee"</li>
+                <li>Also: "taco"</li>
+                <li>For softer articulation: "da-ga"</li>
+            </ul>
+            <p><b>Triple-Tonguing:</b> </p>
+            <ul>
+                <li>Used in passages of triplets</li>
+                <li>"tee-tee-kee-tee-tee-kee"</li>
+            </ul>
+            <p><b>Cross-beat Tonguing:</b> </p>
+            <ul>
+                <li>Used for dotted rhythms</li>
+                <li>"tu-ru" ("ru" falls on the longer note)</li>
+                <li>"tee-kee-tee kee-tee-kee" (this is likely the fastest triple tonguing technique when done correctly)
+                </li>
+            </ul>
+            <p><b>Flutter-Tonguing:</b> </p>
+            <p>Alveolar Trill</p>
             <ul>
                 <li>The conventional method is to roll the tip of the tongue to create a "FrrrFrrr" sound.</li>
             </ul>
-            <p><b>Uvular Trill</b></p>
+            <p>Uvular Trill</p>
             <ul>
                 <li>Done by producing the flutter tongue effect in the back of the throat.</li>
                 <li>Usually done by "gargling" in the back of the throat.</li>
@@ -185,31 +235,43 @@
                 <li>Can be used when an alveolar trill is not appropriate to achieve the fluttertongue effect (i.e.
                     faster fluttertongue)</li>
             </ul>
-            <p>Both methods require more air to produce the effect.</p>
-
-            <!-- <ul>
-                <li><b>Multiphonics:</b> Can be achieved using particular alternative fingerings but generally heavily
-                    influenced by embouchure position.</li>
-                <li><b>Double Tonguing:</b> </li>
-                <li><b>Flutter Tonguing:</b> Two methods: alveolar trill and uvular trill. Alveolar trills aare usually
-                    done by "gargling" in the back of the throat or the conventional method of rolling Rs/rolling the
-                    tip of the tongue to create a "FrrrFrrr" sound. Uvular trills are done by producing a flutter tongue
-                    effect in the back of the tongue, which usually makes a slightly rougher "frrr" effect. It can also
-                    be used if the player cannot roll their tongue. The effect depends on instrument and volume.</li>
-                <li><b>Circular Breathing:</b></li>
-                <li><b>Lower A:</b> Typically the lowest note in the bassoon's range is the lower B&flat;, but the A
-                    below that can be achieved by inserting a specially made extension, rolled up paper, rubber tube, or
-                    clarinet/cor anglais bell into the end of the bell and fingering the low B&flat;</li>
-            </ul> -->
+            <p>Both methods require more air to produce the effect. The effect depends on instrument and volume.</p>
         </section>
+        <!--HOW TO PRACTICE: helps with learning things efficiently and remembering them better-->
         <section>
             <h2>Practice Strategies</h2>
-            <p>You should practice everyday. Even if it's only for 5 minutes.
-                This is because playing an instrument involves a lot of muscle memory, and taking even a few days off
-                can result in losing some of your progress. Warm up should be the first thing you do. Your instrument is
-                cold when you pick it up. Cold instruments
-                play flat. For my warm ups, I do arpeggios, scales, long tones (on a scale with vibrato), and then
-                articulation. Then, I practice new stuff. After that, for the last part of my practice, </p>
+            <p>You should practice everyday. Even if it's only for 5 minutes. This is because playing an instrument
+                involves a lot of muscle memory, and taking even a few days off
+                can result in losing some of your progress. Here is a basic outline of a 30 min warm-up session: </p>
+            <ol>
+                <li>Warm-up (arpeggios, scales, long-tones, articulation) ~5 mins</li>
+                <li>New/in-progress stuff ~15 mins</li>
+                <li>Older stuff (for maintenance/muscle memory) ~10 mins</li>
+            </ol>
+            <p>Other stuff to note: </p>
+            <ul>
+                <li>Don't practice all of your scales and arpeggios in one session (unless that is your new/in-progress
+                    stuff). For warm-ups, 2-3 scales/arpeggios in the key your pieces are in is good. Rotate the scales
+                    you do every session.</li>
+                <li>I do long tones over a scale, usually F major. I hold each note for 15-30 secs trying to keep the
+                    pitch as steady as possible (use a tuner!).</li>
+                <li>My articulation practice is sixteenth-notes. Yours may be different if you struggle with different
+                    things, though I always do sixteenths to get my tongue moving quickly before I practice a piece.
+                </li>
+                <!--
+                    Make your practicing a part of your daily routine.
+Practice in small sections. Practice only one measure of a few notes at a time for very hard passages.
+Change the articulation. If the passage contains some slurs for example, tongue everything.  In this way, you are eliminating a variable.
+Change the rhythm. If a technical passage contains a difficult rhythm, practice it with all eighth or sixteenth notes.  Again you are eliminating a variable.
+Change the rhythm of a passage to dotted eighth and sixteenth then reverse this to a sixteenth and dotted eighth.  This makes half the notes played, twice the speed as the others.  Also try, triplet eighths or four sixteenth notes.
+Use a metronome to increase the tempo gradually, to keep good pulse and to practice at different tempos.
+Practice a particular passage in short spells, then move on to another difficult section. You will make more progress if you practice for short amount is time.  Also, concentration is difficult for long periods of time.
+Change the internal rhythm. Choose a passage that contains an odd number of notes, then play this passage repeatedly immediately going from the last note to the first note without a rest.  Note how the first note of the passage now falls on a different portion of the beat.
+Finger Articulation - This involves concentrating on your fingers and fingering, thinking about which fingers must move to play the next note. This will help you move fingers quickly, even in slow tempo.
+Set goals for yourself!
+Sometimes it helps to practice your least favorite passage/section/piece first so you end your practicing with your favorite piece!
+                -->
+            </ul>
         </section>
         <section class="jump-links">
             <p><a href="#top"><b>Back to Top</b></a></p>
