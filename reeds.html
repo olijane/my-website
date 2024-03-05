@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Reeds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>The Bassoon</title>
 </head>
 
 <body>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="playing.html">Playing the Bassoon</a></li>
             <li><a href="basics.html">Set Up and Care</a></li>
             <li><a href="reeds.html">Reeds</a></li>
             <li><a href="history.html">History</a></li>
@@ -38,19 +44,6 @@
         <!--CARING FOR YOUR REEDS-->
         <section>
             <h2>Fundamentals of Caring for Your Reeds:</h2>
-            <ul>
-                <li>Soak your reed in water before playing or adjusting. This can take anywhere from 1 minutes to 5
-                    minutes or more depending on the reed. Keep a small container for water on hand.</li>
-                <li>Remove excess water from the butt of the reed by blowing through the tip before playing.</li>
-                <li>If, while playing, you hear or feel spit, either take the reed off the bocal and blow it out or suck
-                    the spit through the reed back into your mouth.</li>
-                <li>Store reeds securely in a reed case. Do not keep them in the plastic container used for shipping.
-                </li>
-                <li>Be careful with the reed. Be aware of your surroundings, you can crack your reed if your not
-                    careful! Also, be gentle with it. Don't squeeze the tip to open it.</li>
-                <li>Have at least 3 working reeds at all times. Switch every few days to prolong their lifespan, break
-                    them in evenly, and prevent mold and mildew.</li>
-            </ul>
             <p>
                 Reeds usually start bright and a little flat. As the reed ages, the cane becomes harder. At it's peek,
                 it will have a warm, steady sound that is more in-tune.
@@ -58,6 +51,24 @@
                 Alternating reeds, making adjustments, and keeping the reed clean and cared for can prolong the reed's
                 life.
             </p>
+            <div class="lists" id="reed-care-list">
+                <ul>
+                    <li>Soak your reed in water before playing or adjusting. This can take anywhere from 1 minutes to 5
+                        minutes or more depending on the reed. Keep a small container for water on hand.</li>
+                    <li>Remove excess water from the butt of the reed by blowing through the tip before playing.</li>
+                    <li>If, while playing, you hear or feel spit, either take the reed off the bocal and blow it out or
+                        suck
+                        the spit through the reed back into your mouth.</li>
+                    <li>Store reeds securely in a reed case. Do not keep them in the plastic container used for
+                        shipping.
+                    </li>
+                    <li>Be careful with the reed. Be aware of your surroundings, you can crack your reed if your not
+                        careful! Also, be gentle with it. Don't squeeze the tip to open it.</li>
+                    <li>Have at least 3 working reeds at all times. Switch every few days to prolong their lifespan,
+                        break
+                        them in evenly, and prevent mold and mildew.</li>
+                </ul>
+            </div>
         </section>
         <!--REED MODIFICATION: diagnosing, tools, balancing, wires, scraping,-->
         <section id="reed-modifying">
@@ -69,9 +80,9 @@
                 played and what kind of sound it makes.
             </p>
             <div id="reed-anatomy-images">
-                <img src="images/reedanatomyone.jpg" alt="image of bassoon reed sections with labels"> 
+                <img src="images/reedanatomyone.jpg" alt="image of bassoon reed sections with labels">
                 <!--cr: DoubleReed-->
-                <img src="images/reedanatomythree.jpg" alt="image of bassoon reed sections with labels"> 
+                <img src="images/reedanatomythree.jpg" alt="image of bassoon reed sections with labels">
                 <!--abcbassoon/Switch to Bassoon - Jeff Weaver-->
             </div>
             <!--DIAGNOSING THE PROBLEM-->
@@ -90,14 +101,16 @@
                 Make small adjustments to avoid taking too much cane off.</p>
             <!--TOOLS: what I can think of for now-->
             <h3>Tools</h3>
-            <ul>
-                <li>Mandrel</li>
-                <li>Plaque</li>
-                <li>Small knife</li>
-                <li>Small pliers</li>
-                <li>Sandpaper</li>
-                <li>Cutting block</li>
-            </ul>
+            <div class="lists" id="tools-list">
+                <ul>
+                    <li>Mandrel</li>
+                    <li>Plaque</li>
+                    <li>Small knife</li>
+                    <li>Small pliers</li>
+                    <li>Sandpaper</li>
+                    <li>Cutting block</li>
+                </ul>
+            </div>
             <p>Some of these are not needed, but the first four are necessities. You can also get a reed adjusting kit
                 which will come with some tools.</p>
         </section>
@@ -132,55 +145,61 @@
             <p>To tighten or loosen the wires, insert the mandrel into the butt of the reed, unflatten the twited end of
                 the wire with pliers, pull it away from the reed, and make a quarter turn in either direction until
                 you've reached the optimum tightness.</p>
-            <p>Loosening:</p>
-            <ul>
-                <li>Allows the reed to vibrate more</li>
-                <li>Creates a lower tone in the reed's crow</li>
-            </ul>
-            <p>Tightening:</p>
-            <ul>
-                <li>Dampens the reed's vibrations</li>
-                <li>Creates a higher tone in the reed's crow</li>
-            </ul>
+            <div class="first-wire">
+                <div class="lists opening">
+                    <p><b>Loosening:</b></p>
+                    <p>Allows the reed to vibrate more</p>
+                    <p>Creates a lower tone in the reed's crow</p>
+                </div>
+                <div class="lists closing">
+                    <p><b>Tightening:</b></p>
+                    <p>Dampens the reed's vibrations</p>
+                    <p>Creates a higher tone in the reed's crow</p>
+                </div>
+            </div>
             <p>Opening and closing the reed is one of the most common adjustments to make.
                 To open the reed, gently squeeze the sides of the first wire with your pliers.
                 To close the reed, gently squeeze the top and bottom of the first wire with your pliers.</p>
-            <p>Opening:</p>
-            <ul>
-                <li>Makes the pitch flatter</li>
-                <li>Makes the reed more resistant</li>
-                <li>Darkens the sound</li>
-            </ul>
-            <p>Closing:</p>
-            <ul>
-                <li>Makes the pitch sharper</li>
-                <li>Makes the reed more responsive</li>
-                <li>Brightens the sound</li>
-            </ul>
+            <div class="first-wire">
+                <div class="lists opening">
+                    <p><b>Opening:</b></p>
+                    <p>Makes the pitch flatter</p>
+                    <p>Makes the reed more resistant</p>
+                    <p>Darkens the sound</p>
+                </div>
+                <div class="lists closing">
+                    <p><b>Closing:</b></p>
+                    <p>Makes the pitch sharper</p>
+                    <p>Makes the reed more responsive</p>
+                    <p>Brightens the sound</p>
+                </div>
+            </div>
             <h4>2nd Wire</h4>
             <p>This wire should be tight enough that it cannot be moved.</p>
             <p>This wire should be left alone unless you know adjusting it will fix your problem, as it can effect other
                 parts of the reed negatively.</p>
-            <p>Tightening:</p>
-            <ul>
-                <li>Increases the pitch stability of the reed</li>
-            </ul>
-            <p>Rounder:</p>
-            <ul>
-                <li>Favors high register</li>
-                <li>Sharper pitch</li>
-                <li>Darker sound</li>
-                <li>Improves the stability of E and C#</li>
-                <li>More resistant</li>
-            </ul>
-            <p>Flatter:</p>
-            <ul>
-                <li>Favors low register</li>
-                <li>Makes the pitch flatter</li>
-                <li>Brighter sound</li>
-                <li>Increases response and freeness of reed</li>
-                <li>Better projection</li>
-            </ul>
+            <div id="second-wire">
+                <div class="lists" id="tightening">
+                    <p><b>Tightening:</b></p>
+                    <p>Increases the pitch stability of the reed</p>
+                </div>
+                <div class="lists" id="rounder">
+                    <p><b>Rounder:</b></p>
+                    <p>Favors high register</p>
+                    <p>Sharper pitch</p>
+                    <p>Darker sound</p>
+                    <p>Improves the stability of E and C#</p>
+                    <p>More resistant</p>
+                </div>
+                <div class="lists" id="flatter">
+                    <p><b>Flatter:</b></p>
+                    <p>Favors low register</p>
+                    <p>Makes the pitch flatter</p>
+                    <p>Brighter sound</p>
+                    <p>Increases response and freeness of reed</p>
+                    <p>Better projection</p>
+                </div>
+            </div>
             <h4>3rd Wire</h4>
             <p>This wire is under the thread wrapping around the bottom of the reed. Don't touch this wire for
                 adjustments.</p>
@@ -196,47 +215,53 @@
                 Figuring out where to scrape to get your desired results take trial and error. There are, however, some
                 generalized areas tha you can scrape to hopefully get your desired effect.
             </p>
-            <!--insert images here?-->
-            <p><b>Spine:</b> Softer/lighter reed. Too much cane makes the reed too hard and stubborn, too little cane
-                causes the reed to collapse.</p>
-            <p><b>Tip:</b> Easier articulation and pianissimo in high register.</p>
-            <p><b>Center area of tip:</b> Easier tonguing and high register, brighter sound.</p>
-            <p><b>Triangular corners:</b> Freer low register and easier tonguing in high register. The more you grind
-                towards the middle, the more flexibilty, better stiking and legato, and darker sound you get.</p>
-            <p><b>Channels:</b> Flatter low register.</p>
-            <p><b>Eyes:</b> More flexible, brighter and more vibrant sound, favors high register.</p>
-            <p><b>Heart:</b> The core of the tone. Too little causes the reed to collapse and too much makes a heavy
-                reed with bad striking and little flexibility. Check other places before adjusting here. Can give more
-                freedom, flexibility, easier response, less resistance, brighter sound, and flatter pitch but weaker
-                sound and stability.</p>
-            <p><b>Back (back third of reed):</b> Less resistant low register, flatter pitch.</p>
-            <p><b>Upper third of reed:</b> Brighter sound, more flexibility, better striking.</p>
-            <p><b>Rails:</b> Dampens sound, darker tone, more flexible. Too much off results in imbalance, unstability,
-                stiffness, and resistance.</p>
-            <p><b>Bottom third of the rails:</b> Freer reed, flatter pitch, darker tone.</p>
-            <p><b>Upper third of rails:</b> More resistance, darker sound, better high register.</p>
-            <p><b>Whole reed:</b> Retains overall internal relationship and just makes the reed overall lighter.</p>
-            <p>
-                <b>Sanding</b> is used for smoothing over the reed (we want all the sections to flow together), removing
-                any gunk, and making smaller adjustments.
-                Use a plaque to avoid breaking the tip as you sand
-            </p>
-            <p><b>Clipping the tip</b> gives a harder response, more resistance, more shallow sound, sharper pitch and
-                improved stability.</p>
+            <div class="lists scraping-lists">
+                <p><b>Spine:</b> Softer/lighter reed. Too much cane makes the reed too hard and stubborn, too little
+                    cane causes the reed to collapse.</p>
+                <p><b>Tip:</b> Easier articulation and pianissimo in high register.</p>
+                <p><b>Center area of tip:</b> Easier tonguing and high register, brighter sound.</p>
+                <p><b>Triangular corners:</b> Freer low register and easier tonguing in high register. The more you
+                    grind towards the middle, the more flexibilty, better stiking and legato, and darker sound you get.
+                </p>
+                <p><b>Channels:</b> Flatter low register.</p>
+                <p><b>Eyes:</b> More flexible, brighter and more vibrant sound, favors high register.</p>
+                <p><b>Heart:</b> The core of the tone. Too little causes the reed to collapse and too much makes a heavy
+                    reed with bad striking and little flexibility. Check other places before adjusting here. Can give
+                    more freedom, flexibility, easier response, less resistance, brighter sound, and flatter pitch but
+                    weaker
+                    sound and stability.</p>
+                <p><b>Back (back third of reed):</b> Less resistant low register, flatter pitch.</p>
+                <p><b>Upper third of reed:</b> Brighter sound, more flexibility, better striking.</p>
+                <p><b>Rails:</b> Dampens sound, darker tone, more flexible. Too much off results in imbalance,
+                    unstability, stiffness, and resistance.</p>
+                <p><b>Bottom third of the rails:</b> Freer reed, flatter pitch, darker tone.</p>
+                <p><b>Upper third of rails:</b> More resistance, darker sound, better high register.</p>
+                <p><b>Whole reed:</b> Retains overall internal relationship and just makes the reed overall lighter.</p>
+                <p><b>Sanding</b> is used for smoothing over the reed (we want all the sections to flow together),
+                    removing any gunk, and making smaller adjustments. Use a plaque to avoid breaking the tip as you
+                    sand
+                </p>
+                <p><b>Clipping the tip</b> gives a harder response, more resistance, more shallow sound, sharper pitch
+                    and improved stability.</p>
+            </div>
         </section>
         <!--QUICK TIPS-->
         <section>
-            <h3>Tips</h3>
-            <p><b>Too flat, weak ,or buzzy:</b> Give the reed time to break in. If it is still flat, check the first
-                wire. Thin and taper the tip (or clip). Check the second wire. If none of these work, gently file down
-                the channels and/or the spine to make it a tiny bit shorter.</p>
-            <p><b>Too sharp, stuffy, or dark:</b> Make the tube more oval (wires). File/sand from the collar to the
-                middle of the reed evenly. If none of these work, gently file down the channels and/or the spine if it
-                looks uneven (slowly).</p>
-            <p><b>High note response:</b> Tighten wires if loose. Check the first wire. Sand the rails in the first
-                third of the reed. Thin and taper tip.</p>
-            <p><b>Heavy low register:</b> Check the first wire. Thin the back. Thin and taper the tip.</p>
-            <p>If you clip/scrape/sand too much off, there is usually no remedy. Be careful.</p>
+            <h3>Other Tips</h3>
+            <div class="lists scraping-lists">
+                <p><b>Too flat, weak ,or buzzy:</b> Give the reed time to break in. If it is still flat, check the first
+                    wire. Thin and taper the tip (or clip). Check the second wire. If none of these work, gently file
+                    down
+                    the channels and/or the spine to make it a tiny bit shorter.</p>
+                <p><b>Too sharp, stuffy, or dark:</b> Make the tube more oval (wires). File/sand from the collar to the
+                    middle of the reed evenly. If none of these work, gently file down the channels and/or the spine if
+                    it
+                    looks uneven (slowly).</p>
+                <p><b>High note response:</b> Tighten wires if loose. Check the first wire. Sand the rails in the first
+                    third of the reed. Thin and taper tip.</p>
+                <p><b>Heavy low register:</b> Check the first wire. Thin the back. Thin and taper the tip.</p>
+                <p>If you clip/scrape/sand too much off, there is usually no remedy. Be careful.</p>
+            </div>
         </section>
         <!--MAKING REEDS: mostly outside sources-->
         <section>
@@ -253,7 +278,7 @@
                     target="_blank">here</a>.
                 Below is an image of the stages of the cane from a cylinder to a reed:
             </p>
-            <img id="cane-prep-image" src="images/stagesofcaneprep.png" alt="image of the stages of cane preparation"> 
+            <img id="cane-prep-image" src="images/stagesofcaneprep.png" alt="image of the stages of cane preparation">
             <!--cr: ResearchGate - Steven Beyerlein-->
         </section>
         <!--A lot of this info came from reading Reddit replies, Crook & Staple, DoubleReed, ASU, and Nobel Instruments. Will add citations.-->

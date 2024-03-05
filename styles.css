@@ -3,11 +3,14 @@
     --red-color: rgb(226, 43, 43);
     --gray-color: rgb(66, 66, 66);
     --white-color: rgb(255, 243, 243);
+    --background-color: rgba(239, 238, 238, 0.8);
 }
 
 body {
     padding: 0;
     margin: 0;
+    font-family: "Zilla Slab", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
 }
 
 section,
@@ -23,30 +26,23 @@ header {
     background-size: cover;
     background-blend-mode: darken;
     padding: 10em 5em;
-    margin-top: -3em;
+    margin-top: -4em;
 }
 
 .header {
     color: var(--white-color);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
 }
 
 h2,
 h3,
 h4 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--red-color);
-}
-
-b {
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 p,
 ul,
 ol {
-    font-family: Arial, Helvetica, sans-serif;
     color: var(--gray-color);
 }
 
@@ -61,35 +57,29 @@ ol {
 }
 
 /* Basics Page Layout */
-#set-up-and-holding {
+/* #set-up-and-img {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1;
-    grid-template-areas: 
-    "list image";
-}
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "list image";
+} */
 
 #set-up-list {
-    grid-area: list;
+    /* grid-area: list; */
     justify-content: center;
+    padding: 1em 2em;
+    width: 60%;
 }
 
-#sitting-img {
+/* #sitting-img {
     grid-area: image;
     padding: 1em 3em;
     padding-left: 5em;
-}
-
-.wrap {
-    float: left;
-    padding: 0.5em 1em;
-    padding-top: 0;
-    max-width: 300px;
-    width: 33%;
-}
+} */
 
 #crutch-img {
-    float: right;
+    float: left;
     padding: 0.5em 1em;
     padding-top: 0;
     min-width: 75px;
@@ -101,26 +91,97 @@ section#cleaning {
     clear: both;
 }
 
+/* Reeds Page Layout */
+.lists {
+    background-color: var(--background-color);
+    padding: 1em;
+}
+
+#reed-care-list {
+    width: 75%;
+    padding: 0.5em;
+}
+
+#tools-list {
+    width: 10em;
+    padding: 0.5em;
+}
+
+.first-wire {
+    display: grid;
+    grid-template-columns: repeat(2, 25em);
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+    justify-content: center;
+    grid-template-areas:
+        "opening closing";
+}
+
+.opening {
+    grid-area: opening;
+    text-align: center;
+}
+
+.closing {
+    grid-area: closing;
+    text-align: center;
+}
+
+#second-wire {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1em;
+    justify-content: center;
+    grid-template-areas:
+        "tight round flat";
+}
+
+#tightening {
+    grid-area: tight;
+    text-align: center;
+}
+
+#rounder {
+    grid-area: round;
+    text-align: center;
+}
+
+#flatter {
+    grid-area: flat;
+    text-align: center;
+}
+
+.scraping-lists {
+    display: block;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* History Page Layout */
 div#german-french {
     display: grid;
     grid-template-columns: 0.75fr 2fr;
-    grid-template-rows: 2;
-    grid-template-areas: 
-    "img german"
-    "img french";
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.5em;
+    grid-template-areas:
+        "img german"
+        "img french";
 }
 
 #german {
     grid-area: german;
     padding-left: 1em;
     padding-right: 2em;
+    background-color: var(--background-color);
 }
 
 #french {
     grid-area: french;
     padding-left: 1em;
     padding-right: 2em;
+    background-color: var(--background-color);
 }
 
 #german-french-img {
@@ -154,7 +215,7 @@ div#german-french p {
     width: 100%;
 }
 
-main#basics img {
+/* main#basics img {
     min-width: 150px;
 }
 
@@ -162,7 +223,7 @@ section#set-up img {
     min-width: 200px;
     max-width: 250px;
     width: 33%;
-}
+} */
 
 #air-flow {
     display: block;
@@ -225,7 +286,7 @@ footer,
 
 /* Nav Bar */
 nav {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Zilla Slab", Verdana, Geneva, Tahoma, sans-serif;
     padding: 0 0;
     text-align: center;
     background: transparent;
@@ -253,6 +314,8 @@ nav ul li a:hover {
 }
 
 /* Media Queries */
+/* Header, images, grid layouts break again at width <=330px */
+
 @media (width <=456px) {
     header {
         width: auto;
@@ -269,15 +332,15 @@ nav ul li a:hover {
     }
 }
 
-@media (width <=730px) {
+@media (width <=760px) {
     nav ul {
         flex-direction: column;
     }
-    
+
     header {
-        margin-top: -6em;
+        margin-top: -7em;
     }
-    
+
     .header {
         text-align: center;
     }
@@ -292,7 +355,7 @@ nav ul li a:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }    
+    }
 
     .phone-pics {
         margin-left: auto;
@@ -301,29 +364,50 @@ nav ul li a:hover {
 }
 
 @media (width <=850px) {
-    #set-up-and-holding {
+    /* #set-up-and-img {
         grid-template-columns: 1fr;
         grid-template-rows: 2;
-        grid-template-areas: 
-        "list"
-        "image";
-    }
-    
-    #sitting-img {
+        grid-template-areas:
+            "list"
+            "image";
+    } */
+
+    /* #sitting-img {
         padding: 0;
         margin-left: auto;
         margin-right: auto;
+    } */
+
+    #set-up-list {
+        width: 75%;
+    }
+
+    .first-wire {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "opening"
+            "closing";
+    }
+
+    #second-wire {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "tight"
+            "round"
+            "flat";
     }
 }
 
 @media (width <=1075px) {
     div#german-french {
-        grid-template-columns: 2;
+        grid-template-columns: 1fr;
         grid-template-rows: 3;
-        grid-template-areas: 
-        "german german"
-        "french french"
-        "img img";
+        grid-template-areas:
+            "german"
+            "french"
+            "img";
     }
 
     #german-french-img {

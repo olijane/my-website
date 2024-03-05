@@ -1,0 +1,50 @@
+Jasmin Mercer (She/Her)
+Feb 28 12:45pm
+
+Hey Ollie. I think the images you've included in your posts are perfect and help with explaining the content. 
+I'm wondering if making "learning" and "performing" under your "circular breathing" section, strong h2 tags, 
+like you did with the following section, might make it a little easier to read. 
+I can tell you've put a lot of time and effort into your website. 
+Personally, my navigation menu is a mess but I like how yours flows well with every page!
+
+Updates: Learning and Performing are not meant to be new sections, but rather part of Other Techniques --> Circular Breathing. 
+I did notice, however, that I had not bolded them like I did for other sections, so I fixed that. 
+I think that may have been Jasmin's intended observation, but mistook bold text for h2 tags.
+
+
+April Sykes
+Feb 28 5pm
+
+First off, a huge thank you for sharing your knowledge on the bassoon. 
+I genuinely learned quite a bit I never knew before. 
+I'm aware that all our websites are perpetual works in progress, so please understand my critiques are in the spirit of constructive feedback. 
+The bassoon header image is a winner for me. 
+It sets the stage perfectly, letting anyone landing on the site instantly know what it's all about. 
+However, I did find the homepage a bit heavy on information, leading to quite a bit of scrolling. 
+My suggestion would be to streamline the home page to embrace a more minimalist design ethos. 
+It seems to me that detailed content on notes, half holes, quarter holes, and scales could potentially be given its own space, 
+perhaps on a separate page. This could help declutter the homepage and make the overall site feel more organized. 
+Implementing drop-down menus could significantly enhance user navigation, given the wide range of categories you're covering, 
+such as breathing techniques, practice methods, multiphonics, and articulation. 
+This approach would neatly categorize the wealth of information you're offering, making it more accessible to users. 
+I must say, you appear to have a deep well of knowledge about the bassoon, 
+and the complexity with which you delve into the subject is impressive. 
+The consistency in color scheme across the site is commendable, 
+but perhaps adding a background underneath the font could offer a nice visual break from the default white background, 
+adding a layer of sophistication to the text presentation. 
+Overall, you're doing a fantastic job! My feedback is aimed at enhancing what is already a great resource for bassoon enthusiasts.
+
+Updates: Added a Playing page for all the technique stuff that was previously on the Home page. 
+To fix the lack of content on the Home page, I will add videos/audio from YouTube and openverse of bassoon excerpts and of famous
+bassoonists playing. Added a grey background to certain grid items and lists to break up the white background (Reeds and History pages).
+
+
+Ollie Schmick
+Feb 28 5:09pm
+
+Thank you for the good feedback! I was actually thinking of drop down menus for the homepage and reeds page because they are so long. 
+Unfortunately, for the purpose of my website, I can't really cut down on content without sacrificing quality, 
+but I like your suggestion of moving some stuff off the homepage to another page. 
+That had been what I originally did, but then I was worried that the homepage was pretty bare with no content.
+And for the text background, are you suggesting something like a light gray background? I think that's a good idea. 
+I wanted to a add a third color to break up all the white but I was struggling to make it work.
