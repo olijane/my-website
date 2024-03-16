@@ -242,6 +242,18 @@ a:hover {
     transition: max-height 0.5s ease-in-out;
 }
 
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 /* Footer */
 footer,
 #crookandstaple {
