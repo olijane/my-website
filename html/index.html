@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="I started learning the bassoon on my own and then later got a teacher. This is what I've learned so far.">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,13 +18,37 @@
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="playing.html">Playing the Bassoon</a></li>
-            <li><a href="basics.html">Set Up and Care</a></li>
-            <li><a href="reeds.html">Reeds</a></li>
-            <li><a href="attributions.html">Attributions</a></li>
+            <div class="nav-toggle">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="playing.html">Playing the Bassoon</a></li>
+                <li><a href="basics.html">Set Up and Care</a></li>
+                <li><a href="reeds.html">Reeds</a></li>
+                <li><a href="attributions.html">Sources</a></li>
+            </div>
         </ul>
+        <button id="hamburger-toggle" class="hamburger">
+            <div class="icon-open">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="48"
+                    height="48" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                </svg>
+            </div>
+            <div class="icon-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="48" height="48"
+                    viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                </svg>
+            </div>
+        </button>
     </nav>
+    <!--Used accordions to organize h2 sections-->
     <main id="home">
         <header>
             <h1 class="header"><b>The Bassoon</b></h1>
@@ -43,7 +67,7 @@
             <!--Use audio excerpts from openverse.com and youtube-->
         </section>
         <section>
-            <h2>Audio/Video Samples</h2>
+            <h2>Audio Samples</h2>
             <p>This is what a bassoon sounds like: </p>
             <p>Ludwig van Beethoven - 4th Symphony 1st Movement Excerpt (played by Mezzofortist):</p>
             <audio controls>
@@ -55,6 +79,7 @@
                 <source src="https://upload.wikimedia.org/wikipedia/commons/9/90/Bassoon_rimsky.ogg" type="audio/ogg">
             </audio>
         </section>
+        <script src="../js/script.js"></script>
     </main>
     <footer>
         <p>&copy; Olivia Schmick 2024</p>

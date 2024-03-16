@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,26 +16,40 @@
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="playing.html">Playing the Bassoon</a></li>
-            <li><a href="basics.html">Set Up and Care</a></li>
-            <li><a href="reeds.html">Reeds</a></li>
-            <li><a href="attributions.html">Attributions</a></li>
+            <div class="nav-toggle">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="playing.html">Playing the Bassoon</a></li>
+                <li><a href="basics.html">Set Up and Care</a></li>
+                <li><a href="reeds.html">Reeds</a></li>
+                <li><a href="attributions.html">Sources</a></li>
+            </div>
         </ul>
+        <button id="hamburger-toggle" class="hamburger">
+            <div class="icon-open">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="48"
+                    height="48" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                </svg>
+            </div>
+            <div class="icon-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="48" height="48"
+                    viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                </svg>
+            </div>
+        </button>
     </nav>
     <main>
         <header>
             <h1 class="header" id="basics">Set Up and Care</h1>
         </header>
-        <!--Jump Links to h2 sections-->
-        <section class="jump-links" id="top">
-            <ul>
-                <li><a href="#care">General Care</a></li>
-                <li><a href="#set-up">Set Up</a></li>
-                <li><a href="#holding">Holding</a></li>
-                <li><a href="#cleaning">Cleaning</a></li>
-            </ul>
-        </section>
         <section id="care">
             <h2>General Care</h2>
             <p>Because the body of a bassoon is made from natural wood, the instrument is very susceptible to sudden
@@ -52,7 +66,6 @@
             <!--yamaha.com - Care and Maintenance of a Bassoon -> Before playing the bassoon-->
         </section>
         <!--HOW TO SET UP THE BASSOON-->
-        <!--NOTE: figure out how to format this page w/ all the images-->
         <section id="set-up">
             <h2>Setting Up Your Bassoon</h2>
             <p>The bassoon has six parts: the boot joint, wing joint, bass joint, bell, bocal, and reed.
@@ -100,7 +113,7 @@
         <!--HOW TO HOLD IT-->
         <section id="holding">
             <h2>Holding the Bassoon</h2>
-            <img id="crutch-img" src="images/crutch.jpg" alt="image or right hand on crutch in playing position">
+            <img id="crutch-img" src="../images/crutch.jpg" alt="image or right hand on crutch in playing position">
             <!--cr: Wikipedia - John Yesberg-->
             <!--https://en.wikipedia.org/wiki/File:Bassoon_showing_right_hand_on_handrest_in_playing_position.jpg-->
             <p>
@@ -147,7 +160,7 @@
                 online or in a local music store.
                 This is because air travels through the bassoon like this:
             </p>
-            <img id="air-flow" src="images/Fagott-Bassoon-en.svg.png" alt="diagram of how air flows through the bassoon">
+            <img id="air-flow" src="../images/Fagott-Bassoon-en.svg.png" alt="diagram of how air flows through the bassoon">
             <!--Thomann Online: https://www.thomann.de/gb/onlineexpert_page_bassoons_tuning_and_range.html-->
             <ol>
                 <li>Drop the string through the hole of the wing joint and grab it where it comes out the other
@@ -161,6 +174,7 @@
         <section class="jump-links">
             <p><a href="#top"><b>Back to Top</b></a></p>
         </section>
+        <script src="../js/script.js"></script>
     </main>
     <!--Most of this comes from my own knowledge and some from yamaha.com and Switch to Bassoon-->
     <footer>

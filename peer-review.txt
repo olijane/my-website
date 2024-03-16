@@ -37,6 +37,7 @@ Overall, you're doing a fantastic job! My feedback is aimed at enhancing what is
 Updates: Added a Playing page for all the technique stuff that was previously on the Home page. 
 To fix the lack of content on the Home page, I will add videos/audio from YouTube and openverse of bassoon excerpts and of famous
 bassoonists playing. Added a grey background to certain grid items and lists to break up the white background (Reeds and History pages).
+Added accordions on the Playing and Reeds pages.
 
 
 Ollie Schmick
@@ -48,3 +49,12 @@ but I like your suggestion of moving some stuff off the homepage to another page
 That had been what I originally did, but then I was worried that the homepage was pretty bare with no content.
 And for the text background, are you suggesting something like a light gray background? I think that's a good idea. 
 I wanted to a add a third color to break up all the white but I was struggling to make it work.
+
+Sebastian Burtis
+Mar 12 11:47am
+
+Hello Ollie,
+
+I think your website looks wonderful. Your use of media breaks was very well done, and I like how organized your files are. 
+Your names are accurate too. Really the only thing I can think of is having a folder for your HTML and CSS files as well, 
+but other than that I think your website is perfect.

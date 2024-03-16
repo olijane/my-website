@@ -20,7 +20,7 @@ footer {
 
 /* Header and header image */
 header {
-    background: rgba(117, 117, 117, 0.805) url(images/bassooncloseup.jpg) no-repeat center;
+    background: rgba(117, 117, 117, 0.805) url(../images/bassooncloseup.jpg) no-repeat center;
     font-size: larger;
     display: block;
     background-size: cover;
@@ -32,18 +32,6 @@ header {
 .header {
     color: var(--white-color);
     text-align: left;
-}
-
-.jump-links ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: center;
-    padding: 0;
-}
-
-.jump-links ul li {
-    padding: 0 0.5em;
 }
 
 h2,
@@ -68,27 +56,11 @@ ol {
     padding: 1em;
 }
 
-/* Basics Page Layout */
-/* #set-up-and-img {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "list image";
-} */
-
 #set-up-list {
-    /* grid-area: list; */
     justify-content: center;
     padding: 1em 2em;
     width: 60%;
 }
-
-/* #sitting-img {
-    grid-area: image;
-    padding: 1em 3em;
-    padding-left: 5em;
-} */
 
 #crutch-img {
     float: left;
@@ -171,43 +143,6 @@ section#cleaning {
     margin-right: auto;
 }
 
-/* History Page Layout */
-/* div#german-french {
-    display: grid;
-    grid-template-columns: 0.75fr 2fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 0.5em;
-    grid-template-areas:
-        "img german"
-        "img french";
-}
-
-#german {
-    grid-area: german;
-    padding-left: 1em;
-    padding-right: 2em;
-    background-color: var(--background-color);
-}
-
-#french {
-    grid-area: french;
-    padding-left: 1em;
-    padding-right: 2em;
-    background-color: var(--background-color);
-}
-
-#german-french-img {
-    grid-area: img;
-    padding: 1em 0;
-    min-width: 350px;
-    max-width: 450px;
-    width: 100%;
-}
-
-div#german-french p {
-    margin: 1em;
-} */
-
 /* Images */
 #fingering-chart {
     display: flex;
@@ -222,20 +157,10 @@ div#german-french p {
 }
 
 .phone-pics {
-    min-width: 350px;
+    min-width: 300px;
     max-width: 450px;
     width: 100%;
 }
-
-/* main#basics img {
-    min-width: 150px;
-}
-
-section#set-up img {
-    min-width: 200px;
-    max-width: 250px;
-    width: 33%;
-} */
 
 #air-flow {
     display: block;
@@ -246,10 +171,10 @@ section#set-up img {
     width: 33%;
 }
 
-#reed-anatomy-images {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#reed-anatomy-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section#reed-modifying img {
@@ -287,6 +212,36 @@ a:hover {
     color: var(--red-color);
 }
 
+/* Accordions */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    font-family: "Zilla Slab", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: var(--red-color);
+    background: rgb(249, 249, 249);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border-bottom: var(--gray-color);
+    text-align: left;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: rgb(231, 231, 231);
+    font-weight: bolder;
+}
+
+/* Style the accordion panel. Hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
 /* Footer */
 footer,
 #crookandstaple {
@@ -298,12 +253,16 @@ footer,
 
 /* Nav Bar */
 nav {
-    font-family: "Zilla Slab", Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     background: transparent;
+    position: relative;
 }
 
 nav ul {
+    padding: 0;
+}
+
+nav ul div.nav-toggle {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -312,7 +271,6 @@ nav ul {
 }
 
 nav ul li {
-    /* flex-basis: 20%; */
     padding: 0 1.5em;
 }
 
@@ -322,18 +280,35 @@ nav ul li a {
     font-weight: bolder;
 }
 
-nav ul li a:hover {
-    color: rgb(255, 172, 172) !important;
+nav ul a:hover {
+    color: rgb(255, 74, 74) !important;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+nav .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border: unset;
+    background: unset;
+    display: none;
+}
+
+nav .hamburger .icon-close {
+    display: none;
 }
 
 /* Media Queries */
-/* Header, images, grid layouts break again at width <=330px */
+/* Header, images, grid layouts break again at width <=350px */
 
 @media (width <=456px) {
     header {
-        width: auto;
-        background-size: cover;
-        font-size: larger;
+        padding: 5em 5em;
+    }
+
+    .header {
+        font-size: 1.5em;
     }
 
     h2,
@@ -346,12 +321,55 @@ nav ul li a:hover {
 }
 
 @media (width <=760px) {
+    nav {
+        background-color: rgb(0, 0, 0);
+        margin-top: -1em;
+    }
+
     nav ul {
         flex-direction: column;
+        justify-content: right;
+        visibility: hidden;
+        transition: max-height 1s ease-in-out;
+    }
+
+    nav ul div.nav-toggle {
+        display: none;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 1em;
+    }
+
+    nav ul li:hover {
+        background-color: rgb(44, 44, 44);
+    }
+
+    nav.open ul {
+        padding: 0;
+        visibility: visible;
+        transition: max-height 5s ease-in-out;
+    }
+
+    nav.open .nav-toggle {
+        display: block;
+    }
+
+    nav .hamburger {
+        display: block;
+    }
+
+    nav.open .hamburger .icon-open {
+        display: none;
+    }
+
+    nav.open .hamburger .icon-close {
+        display: block;
     }
 
     header {
-        margin-top: -7em;
+        margin-top: -1em;
     }
 
     .header {
@@ -377,20 +395,6 @@ nav ul li a:hover {
 }
 
 @media (width <=850px) {
-    /* #set-up-and-img {
-        grid-template-columns: 1fr;
-        grid-template-rows: 2;
-        grid-template-areas:
-            "list"
-            "image";
-    } */
-
-    /* #sitting-img {
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
-    } */
-
     #set-up-list {
         width: 75%;
     }
@@ -410,24 +414,5 @@ nav ul li a:hover {
             "tight"
             "round"
             "flat";
-    }
-}
-
-@media (width <=1075px) {
-    div#german-french {
-        grid-template-columns: 1fr;
-        grid-template-rows: 3;
-        grid-template-areas:
-            "german"
-            "french"
-            "img";
-    }
-
-    #german-french-img {
-        min-width: 100px;
-        max-width: 400px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
 }

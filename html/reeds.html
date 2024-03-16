@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,37 +16,41 @@
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="playing.html">Playing the Bassoon</a></li>
-            <li><a href="basics.html">Set Up and Care</a></li>
-            <li><a href="reeds.html">Reeds</a></li>
-            <li><a href="attributions.html">Attributions</a></li>
+            <div class="nav-toggle">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="playing.html">Playing the Bassoon</a></li>
+                <li><a href="basics.html">Set Up and Care</a></li>
+                <li><a href="reeds.html">Reeds</a></li>
+                <li><a href="attributions.html">Sources</a></li>
+            </div>
         </ul>
+        <button id="hamburger-toggle" class="hamburger">
+            <div class="icon-open">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="48"
+                    height="48" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                </svg>
+            </div>
+            <div class="icon-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="48" height="48"
+                    viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                </svg>
+            </div>
+        </button>
     </nav>
-    <!--Maybe put a jump link list so users can see what is the page?-->
+    <!--Used accordions to organize h2 sections-->
     <main>
         <header>
             <h1 class="header" id="reeds">Reeds</h1>
         </header>
-        <!--Jump Links to h2 sections-->
-        <section class="jump-links" id="top">
-            <ul>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#where-to-get-reeds">Where to Get Your Reeds</a></li>
-                <li><a href="#reed-care">Reed Care</a></li>
-                <li><a href="#reed-modifying">Reed Modification</a></li>
-                <!-- <ul>
-                        <li><a href="#parts-of-reed">Parts of the Reed</a></li>
-                        <li><a href="#diagnosing">Diagnosing</a></li>
-                        <li><a href="#tools-list">Tools</a></li>
-                        <li><a href="#balancing">Balancing</a></li>
-                        <li><a href="#wire-adjustments">Wire Adjustments</a></li>
-                        <li><a href="#scraping-and-sanding">Scraping and Sanding</a></li>
-                        <li><a href="#quick-tips">Quick Tips</a></li>
-                    </ul>   -->
-                <li><a href="#reed-making">Reed Making</a></li>
-            </ul>
-        </section>
         <!--REEDS-->
         <section id="overview">
             <h2>Overview</h2>
@@ -60,7 +64,9 @@
             <p>You can buy them online (make sure the person you are buying it from is a bassoonist themselves) or make
                 your own</p>
         </section>
-        <section id="where-to-get-reeds">
+        <!--WHERE TO GET YOUR REEDS-->
+        <button class="accordion">Where to Get Your Reeds</button>
+        <section class="panel" id="where-to-get-reeds">
             <h2>Where to Get Your Reeds</h2>
             <ul>
                 <li>Find a professional bassoonist to make reeds for you.</li>
@@ -80,7 +86,8 @@
             </ul>
         </section>
         <!--CARING FOR YOUR REEDS-->
-        <section id="reed-care">
+        <button class="accordion">Fundamentals of Caring for Your Reeds</button>
+        <section class="panel" id="reed-care">
             <h2>Fundamentals of Caring for Your Reeds:</h2>
             <p>
                 Reeds usually start bright and a little flat. As the reed ages, the cane becomes harder. At it's peek,
@@ -109,20 +116,19 @@
             </div>
         </section>
         <!--REED MODIFICATION: diagnosing, tools, balancing, wires, scraping,-->
-        <section id="reed-modifying">
-            <h2>Modifying the Reed</h2>
+        <button class="accordion">Modifying Reeds</button>
+        <section class="panel" id="reed-modifying">
+            <h2>Modifying Reeds</h2>
             <!--REED PARTS-->
             <h3>Parts of the Reed</h3>
             <p>
                 Reeds have a few different parts to them. Adjusting any of these parts changes the way the reed is
                 played and what kind of sound it makes.
             </p>
-            <div id="reed-anatomy-images">
-                <img src="images/reedanatomyone.jpg" alt="image of bassoon reed sections with labels">
-                <!--cr: DoubleReed-->
-                <img src="images/reedanatomythree.jpg" alt="image of bassoon reed sections with labels">
-                <!--abcbassoon/Switch to Bassoon - Jeff Weaver-->
-            </div>
+            <!--DoubleReed reed anatomy image-->
+            <img id="reed-anatomy-img" src="../images/reedanatomyone.jpg"
+                alt="image of bassoon reed sections with labels">
+            <!--cr: DoubleReed-->
             <!--DIAGNOSING THE PROBLEM-->
             <h3 id="diagnosing">Diagnosing</h3>
             <p>
@@ -153,7 +159,8 @@
                 which will come with some tools.</p>
         </section>
         <!--BALANCING-->
-        <section id="balancing">
+        <button class="accordion">Balancing</button>
+        <section class="panel" id="balancing">
             <h3>Balancing the Reed</h3>
             <p>
                 No matter what adjustments you make, you have to keep the reed symmetrical. This means that if you make
@@ -164,7 +171,8 @@
             </p>
         </section>
         <!--WIRE ADJUSTMENTS-->
-        <section id="wire-adjustments">
+        <button class="accordion">Wire Adjustments</button>
+        <section class="panel" id="wire-adjustments">
             <h3>Adjusting the Wires</h3>
             <p>
                 Probably the most common adjustment you will make, adjusting the wires can do a few different things and
@@ -173,6 +181,7 @@
                 (this gives it support and stability as you adjust).
                 Make sure you squeeze both sides evenly and that you don't over-do it.
             </p>
+            <!--FIRST WIRE-->
             <h4>1st Wire</h4>
             <p>This wire should be just tight enough that you can nudge it with your fingernail but not so loose that
                 you can move the wire up and down the reed shaft.</p>
@@ -183,6 +192,7 @@
             <p>To tighten or loosen the wires, insert the mandrel into the butt of the reed, unflatten the twited end of
                 the wire with pliers, pull it away from the reed, and make a quarter turn in either direction until
                 you've reached the optimum tightness.</p>
+            <!--Grid Layout for all 4 lists to make them look the same-->
             <div class="first-wire">
                 <div class="lists opening">
                     <p><b>Loosening:</b></p>
@@ -212,10 +222,12 @@
                     <p>Brightens the sound</p>
                 </div>
             </div>
+            <!--SECOND WIRE-->
             <h4>2nd Wire</h4>
             <p>This wire should be tight enough that it cannot be moved.</p>
             <p>This wire should be left alone unless you know adjusting it will fix your problem, as it can effect other
                 parts of the reed negatively.</p>
+            <!--Grid used for three lists here-->
             <div id="second-wire">
                 <div class="lists" id="tightening">
                     <p><b>Tightening:</b></p>
@@ -243,7 +255,8 @@
                 adjustments.</p>
         </section>
         <!--SCRAPING & SANDING: general areas and what they tend to effect-->
-        <section id="scraping-and-sanding">
+        <button class="accordion">Scraping and Sanding</button>
+        <section class="panel" id="scraping-and-sanding">
             <h3>Scraping and Sanding</h3>
             <p>
                 Scraping bassoon reeds is much more difficult, as adjustments cannot be reversed and scraping too much
@@ -253,6 +266,7 @@
                 Figuring out where to scrape to get your desired results take trial and error. There are, however, some
                 generalized areas tha you can scrape to hopefully get your desired effect.
             </p>
+            <!--Formatted in styles.css-->
             <div class="lists scraping-lists">
                 <p><b>Spine:</b> Softer/lighter reed. Too much cane makes the reed too hard and stubborn, too little
                     cane causes the reed to collapse.</p>
@@ -284,8 +298,10 @@
             </div>
         </section>
         <!--QUICK TIPS: -->
-        <section id="quick-tips">
+        <button class="accordion">Quick Tips</button>
+        <section class="panel" id="quick-tips">
             <h3>Quick Tips</h3>
+            <!--Same formatting as above list-->
             <div class="lists scraping-lists">
                 <p><b>Too hard:</b> make sure the middle of the reed isn't too thick in comparison to the edges. if
                     there is too much wood on the reed, scrape evenly across the whole reed.</p>
@@ -307,7 +323,8 @@
             <!--millermarketing - Reed Adjusting - Bassoon by Christian Davidsson-->
         </section>
         <!--MAKING REEDS: mostly outside sources-->
-        <section id="reed-making">
+        <button class="accordion">Making Reeds</button>
+        <section class="panel" id="reed-making">
             <!--I have not made my own reeds before, but I figured I should add this because most professional bassoonists do-->
             <h2>Creating Your Own Reeds</h2>
             <p>
@@ -321,14 +338,22 @@
                     target="_blank">here</a>.
                 Below is an image of the stages of the cane from a cylinder to a reed:
             </p>
-            <img id="cane-prep-image" src="images/stagesofcaneprep.png" alt="image of the stages of cane preparation">
+            <img id="cane-prep-image" src="../images/stagesofcaneprep.png"
+                alt="image of the stages of cane preparation">
             <!--cr: ResearchGate - Steven Beyerlein-->
-            <!--ADD LINKS TO YOUTUBE VIDEOS-->
+            <!--LINKS TO YOUTUBE VIDEOS: I looked it up and it said attribution isn't required if link directly to the original-->
+            <p>Here are some YouTube videos about bassoon reed making:</p>
+            <ul>
+                <li><a href="https://youtu.be/mojhRGbWeWE?si=xo0gKTIQgBZsb62E" target="_blank">Trent Jacobs: Making a
+                        Bassoon Reed - from raw can to finished reed</a></li>
+                <li><a href="https://youtu.be/xzEHjgt5JVI?si=zsrEg16KkZTMLGdn" target="_blank">MusGaia: HOW I MAKE MY
+                        REEDS | a step by step video to build your bassoon reeds without special tools</a></li>
+                <li><a href="https://youtu.be/2Cl1bVDL6bM?si=ww0XLneSnW8cu-R1" target="_blank">Building a Bassoonist:
+                        Get Started Making Your Own Bassoon Reeds</a></li>
+            </ul>
         </section>
         <!--A lot of this info came from reading Reddit replies, Crook & Staple, DoubleReed, and Miller Marketing.-->
-        <section class="jump-links">
-            <p><a href="#top"><b>Back to Top</b></a></p>
-        </section>
+        <script src="../js/script.js"></script>
     </main>
     <footer>
         &copy; Olivia Schmick 2024

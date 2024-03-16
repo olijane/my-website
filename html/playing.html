@@ -6,72 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="I started learning the bassoon on my own and then later got a teacher. This is what I've learned so far.">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4e9c22bc59.js" crossorigin="anonymous"></script>
     <title>The Bassoon</title>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="playing.html">Playing the Bassoon</a></li>
-            <li><a href="basics.html">Set Up and Care</a></li>
-            <li><a href="reeds.html">Reeds</a></li>
-            <li><a href="attributions.html">Attributions</a></li>
+            <div class="nav-toggle">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="playing.html">Playing the Bassoon</a></li>
+                <li><a href="basics.html">Set Up and Care</a></li>
+                <li><a href="reeds.html">Reeds</a></li>
+                <li><a href="attributions.html">Sources</a></li>
+            </div>
         </ul>
+        <button id="hamburger-toggle" class="hamburger">
+            <div class="icon-open">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="48"
+                    height="48" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                </svg>
+            </div>
+            <div class="icon-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="48" height="48"
+                    viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                </svg>
+            </div>
+        </button>
     </nav>
     <main>
         <header>
             <h1 class="header"><b>Playing the Bassoon</b></h1>
         </header>
-        <!--Jump Links to h2 sections-->
-        <section class="jump-links" id="top">
-            <ul>
-                <li><a href="#bassoon-notes">Bassoon Notes</a></li>
-                    <!-- <ul>
-                        <li><a href="#half-and-quarter-holes">Half Holes and Quarter Holes</a></li>
-                        <li><a href="#scales">Scales</a></li>
-                    </ul> -->
-                <li><a href="#flicking-and-venting">Flicking and Venting</a></li>
-                <li><a href="#pitch-control">Pitch Control</a></li>
-                <li><a href="#articulation">Articulation</a></li>
-                <li><a href="#vibrato">Vibrato</a></li>
-                <li><a href="#other-techniques">Other Techniques</a></li>
-                    <!-- <ul>
-                        <li><a href="#multiphonics">Multiphonics</a></li>
-                        <li><a href="#circular-breathing">Circular Breathing</a></li>
-                        <li><a href="#advanced-tonguing">Advanced Tonguing</a></li>
-                    </ul>   -->
-                <li><a href="#practice-strategies">Practice Strategies</a></li>
-            </ul>
+        <section>
+            <h2>Overview</h2>
+            <p>The bassoon is a double reed instrument. Compared to other instruments, advanced techniques are similar,
+                but the bassoon's fingering system can be quite complex.</p>
+            <p>The bassoon uses a mix of keys and holes to produce different pitches.</p>
+            <p>The range of a bassoon begins at B&flat;<sub>1</sub> and extends to G<sub>5</sub>. This means the
+                bassoon can play roughly three octaves.</p>
         </section>
         <!--General stuff about notes on the bassoon-->
-        <section id="bassoon-notes">
+        <button class="accordion">Bassoon Notes</button>
+        <section class="panel" id="bassoon-notes">
             <h2>Bassoon Notes</h2>
-            <p>
-                The bassoon uses a mix of keys and holes to produce different pitches.
-            </p>
-            <p>
-                The range of a bassoon begins at B&flat;<sub>1</sub> and extends to G<sub>5</sub>. This means the
-                bassoon can play roughly three octaves.
-            </p>
             <p>Use a fingering chart to learn new fingerings. Repeatedly using them in your playing will help you
-                remember them. Fingerings vary between players, as each player has to meet their own and their bassoon's
-                requirements. Experiment with a tuner to find what fingerings are most in-tune, which speak more, how
-                out of tune certain fingerings are, and which ones are the best for fast passages (how in-tune the note
+                remember them. Fingerings vary between players, as each player has to meet their own and their
+                bassoon's
+                requirements. Experiment with a tuner to find what fingerings are most in-tune, which speak more,
+                how
+                out of tune certain fingerings are, and which ones are the best for fast passages (how in-tune the
+                note
                 is matters less if it is only heard as part of a sixteenth-note run). Some of the fingerings will be
-                learned as you need them. The front F&sharp; fingering, for example, is used when another fingering that
+                learned as you need them. The front F&sharp; fingering, for example, is used when another fingering
+                that
                 requires the right hand thumb is used immediately before or after an F&sharp; to avoid bubbles.</p>
             <!--Flexbox used for fingering chart images to center them-->
             <div id="fingering-chart">
-                <img class="phone-pics" src="images/fingering-chart-one.jpg"
+                <img class="phone-pics" src="../images/fingering-chart-one.jpg"
                     alt="fingering chart for lower half of range">
-                <img class="phone-pics" src="images/fingering-chart-two.jpg"
+                <img class="phone-pics" src="../images/fingering-chart-two.jpg"
                     alt="fingering chart for upper half of range">
             </div>
             <h3 id="half-and-quarter-holes">Half Holes and Quarter Holes</h3>
@@ -82,11 +91,14 @@
             <h2>Scales</h2>
             <!--Grid used to put text to side of image-->
             <div id="scales">
-                <img class="phone-pics" src="images/scales.jpg" alt="major and minor scales in bass clef">
+                <img class="phone-pics" src="../images/scales.jpg" alt="major and minor scales in bass clef">
                 <div id="scales-text">
-                    <p>There are three types of minor scales: natural, harmonic, and melodic. Natural minor scales are
-                        played as written on the sheet. Harmonic minor scales raise the 7th by a half-step going up and
-                        down the scale. Melodic minor scales raise the 6th and 7th by a half-step only going up; they
+                    <p>There are three types of minor scales: natural, harmonic, and melodic. Natural minor scales
+                        are
+                        played as written on the sheet. Harmonic minor scales raise the 7th by a half-step going up
+                        and
+                        down the scale. Melodic minor scales raise the 6th and 7th by a half-step only going up;
+                        they
                         are lowered
                         again to be as written going down.
                     </p>
@@ -97,7 +109,8 @@
             </div>
         </section>
         <!--FLICKING and VENTING-->
-        <section id="flicking-and-venting">
+        <button class="accordion">Flicking and Venting</button>
+        <section class="panel" id="flicking-and-venting">
             <h2>Flicking and Venting</h2>
             <p>
                 Flicking involves the left hand thumb momentarily pressing or "flicking" the high A through D keys at
@@ -120,7 +133,8 @@
             </p>
         </section>
         <!--PITCH/BREATH CONTROL and EMBOUCHURE-->
-        <section id="pitch-control">
+        <button class="accordion">Pitch Control</button>
+        <section class="panel" id="pitch-control">
             <h2>Pitch Control</h2>
             <p>Players have a lot of flexibility with their pitch and it is important that the player learn how to
                 control their pitch. They do this through a variety of ways (alternate fingerings, reeds, increasing or
@@ -156,7 +170,8 @@
         </section>
         <!--Finish adding all the content to Vibrato section-->
         <!--ARTICULATION & TONGUING-->
-        <section id="articulation">
+        <button class="accordion">Articulation</button>
+        <section class="panel" id="articulation">
             <h2>Articulation</h2>
             <p>Articulation describes how muscicians start and end a note. For wind instruments, we use our tongue.
                 Hence, why wind players sometimes call articulation tonguing or striking for wind instruments.</p>
@@ -170,16 +185,34 @@
                 notes. However, we can also produce a beautiful legato, or a breath attack.</p>
         </section>
         <!--VIBRATO-->
-        <section id="vibrato">
+        <button class="accordion">Vibrato</button>
+        <section class="panel" id="vibrato">
             <h2>Vibrato</h2> <!--FINISH THIS SECTION-->
             <p>Vibrato is a technique muscicians use during longer notes to make them more interesting and expressive.
                 You've probably heard vibrato before from popular singers. The technique can vary between intruments and
                 preferences.</p>
             <p>For bassoon, the vibrato should be from the throat. You can also vibrato from lower (like your core), but
                 throat vibrato is my preferred method.</p>
+            <p>Practice Strategies:</p>
+            <p>Option 1:</p>
+            <ul>
+                <li>Set a metronome to 80 bpm (or whichever bpm is a good speed for you to start with) and pulse your
+                    air stream on the beat.</li>
+                <li>Once you are comfortable doing this, start pulsing on eighth notes.</li>
+                <li>As you get comfortable with each stage, progress to the next subdivision (triplets, sixteenths)</li>
+                <li>Grab a tuner and start pulsing (without the metronome), trying to keep the pointer close to the
+                    center. Smooth out your pulses and practice controlling the pitch.</li>
+            </ul>
+            <p>Option 2:</p>
+            <ul>
+                <li>Grab a tuner and start bending your pitch up and down a good amount in each direction.</li>
+                <li>Slowly start decreasing the amount your pitch fluctuates.</li>
+                <li>Eventually aim for small waves in the "in-tune' zone on your tuner.</li>
+            </ul>
         </section>
         <!--ADVANCED/EXTRA TECHNIQUES: Multiphonics, Circular Breathing, Other tonguing techniques-->
-        <section id="other-techniques">
+        <button class="accordion">Other Techniques</button>
+        <section class="panel" id="other-techniques">
             <h2>Other Techniques</h2>
             <h3 id="multiphonics">Multiphonics</h3>
             <p>A multiphonic is a technique where several notes are produced at once (on instruments that only produce
@@ -250,7 +283,8 @@
             <p>Both methods require more air to produce the effect. The effect depends on instrument and volume.</p>
         </section>
         <!--HOW TO PRACTICE: helps with learning things efficiently and remembering them better-->
-        <section id="practice-strategies">
+        <button class="accordion">Practice Strategies</button>
+        <section class="panel" id="practice-strategies">
             <h2>Practice Strategies</h2>
             <p>You should practice everyday. Even if it's only for 5 minutes. This is because playing an instrument
                 involves a lot of muscle memory, and taking even a few days off
@@ -272,9 +306,7 @@
                 </li>
             </ul>
         </section>
-        <section class="jump-links">
-            <p><a href="#top"><b>Back to Top</b></a></p>
-        </section>
+        <script src="../js/script.js"></script>
     </main>
     <!--Most of this comes from Wikipedia and my own knowledge-->
     <footer>
