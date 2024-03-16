@@ -218,11 +218,11 @@ a:hover {
     font-family: "Zilla Slab", Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
     color: var(--red-color);
-    background: rgb(249, 249, 249);
+    background: rgb(247, 247, 247);
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border-bottom: var(--gray-color);
+    border: rgb(220, 220, 220);
     text-align: left;
 }
 
